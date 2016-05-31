@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 3.2 FATAL_ERROR)
 
+if(TARGET array_io)
+  return()
+endif()
+
 enable_testing()
 
 project(array_io VERSION 0.1 LANGUAGES CXX)
