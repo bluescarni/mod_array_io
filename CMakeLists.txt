@@ -12,7 +12,6 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/mod_cmak
 include(ModularDeps)
 
 add_dependency("array" "https://github.com/bluescarni/mod_array.git")
-add_subdirectory(deps/array)
 
 add_library(array_io src/array_io.cpp)
 target_link_libraries(array_io array)
