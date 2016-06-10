@@ -7,7 +7,7 @@ project(array_io VERSION 0.1 LANGUAGES CXX)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/mod_cmake")
 include(ModularDeps)
 
-add_dependency("array" "https://github.com/bluescarni/mod_array.git")
+add_dependency(NAME "array" REPO "https://github.com/bluescarni/mod_array.git")
 
 add_library(array_io src/array_io.cpp)
 target_link_libraries(array_io array)
